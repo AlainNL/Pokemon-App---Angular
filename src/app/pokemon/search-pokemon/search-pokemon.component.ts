@@ -17,7 +17,7 @@ export class SearchPokemonComponent implements OnInit {
     private router: Router,
     private pokemonService: PokemonService) { }
 
-  ngOnInit() {
+  ngOnInit()   {
     this.pokemons$ = this.searchTerms.pipe(
       debounceTime(300),
       distinctUntilChanged(),
