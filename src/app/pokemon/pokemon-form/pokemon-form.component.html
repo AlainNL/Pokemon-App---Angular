@@ -90,9 +90,10 @@
             [disabled]="!pokemonForm.form.valid">
             Valider</button>
         </div>
-
       </div>
     </div>
   </div>
 </form>
-<h3 *ngIf="!pokemon" class="center">Aucun pokémon à éditer...</h3>
+<h3 *ngIf="!pokemon" class="center">
+  <app-loader></app-loader>
+</h3>
